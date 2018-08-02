@@ -22,6 +22,7 @@ def count_elements (collection)
   collection.uniq.each{|element| element[:count] = collection.count(element)}
 end
 
+<<<<<<< HEAD
 def merge_data (keys, values)
   hashArr = []
   keys.each{|id_name|
@@ -60,4 +61,16 @@ def organize_schools (collection)
     end
   end
   organized_schools
+=======
+def merge_data (col1, col2)
+  col2.map{|element|
+    element.flatten[1..element.length-1]
+  }
+end
+
+def find_cool (collection)
+end
+
+def organize_schools (collection)
+>>>>>>> 982d1d139818aac2f4091aa3c3b10b07ad8d8a01
 end
